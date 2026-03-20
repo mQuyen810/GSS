@@ -1,0 +1,10 @@
+D:\Workspace\C#\GSS\bin\Debug\GSS.exe.config
+D:\Workspace\C#\GSS\bin\Debug\GSS.exe
+D:\Workspace\C#\GSS\bin\Debug\GSS.pdb
+D:\Workspace\C#\GSS\obj\Debug\GSS.csproj.AssemblyReference.cache
+D:\Workspace\C#\GSS\obj\Debug\GSS.Properties.Resources.resources
+D:\Workspace\C#\GSS\obj\Debug\GSS.csproj.GenerateResource.cache
+D:\Workspace\C#\GSS\obj\Debug\GSS.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\GSS\obj\Debug\GSS.exe
+D:\Workspace\C#\GSS\obj\Debug\GSS.pdb
+D:\Workspace\C#\GSS\obj\Debug\GSS.exe.config
