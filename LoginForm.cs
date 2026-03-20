@@ -41,5 +41,13 @@ namespace GSS
         {
 
         }
+
+        private void link_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            registerForm registerForm = new registerForm();
+            this.Hide();
+            registerForm.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -45,21 +45,22 @@
             // 
             // lb_Register
             // 
-            this.lb_Register.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_Register.AutoEllipsis = true;
             this.lb_Register.AutoSize = true;
             this.lb_Register.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_Register.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lb_Register.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lb_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Register.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Register.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_Register.Location = new System.Drawing.Point(3, 0);
+            this.lb_Register.Location = new System.Drawing.Point(2, 0);
+            this.lb_Register.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Register.Name = "lb_Register";
-            this.lb_Register.Size = new System.Drawing.Size(794, 37);
+            this.lb_Register.Size = new System.Drawing.Size(596, 104);
             this.lb_Register.TabIndex = 0;
             this.lb_Register.Text = "Đăng ký";
             this.lb_Register.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_Register.UseMnemonic = false;
+            this.lb_Register.Click += new System.EventHandler(this.lb_Register_Click);
             // 
             // tab_Login
             // 
@@ -74,8 +75,9 @@
             this.tab_Login.RowCount = 2;
             this.tab_Login.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.42105F));
             this.tab_Login.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.57895F));
-            this.tab_Login.Size = new System.Drawing.Size(800, 450);
+            this.tab_Login.Size = new System.Drawing.Size(600, 366);
             this.tab_Login.TabIndex = 2;
+            this.tab_Login.Paint += new System.Windows.Forms.PaintEventHandler(this.tab_Login_Paint);
             // 
             // panel_dNhap
             // 
@@ -90,16 +92,18 @@
             this.panel_dNhap.Controls.Add(this.txt_Password);
             this.panel_dNhap.Controls.Add(this.txt_Register);
             this.panel_dNhap.Controls.Add(this.btn_Register);
-            this.panel_dNhap.Location = new System.Drawing.Point(3, 130);
+            this.panel_dNhap.Location = new System.Drawing.Point(2, 106);
+            this.panel_dNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel_dNhap.Name = "panel_dNhap";
-            this.panel_dNhap.Size = new System.Drawing.Size(794, 317);
+            this.panel_dNhap.Size = new System.Drawing.Size(596, 258);
             this.panel_dNhap.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(176, 120);
+            this.label2.Location = new System.Drawing.Point(132, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 24);
             this.label2.TabIndex = 9;
@@ -109,9 +113,10 @@
             // 
             this.txt_resetPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_resetPassword.Location = new System.Drawing.Point(404, 119);
+            this.txt_resetPassword.Location = new System.Drawing.Point(303, 97);
+            this.txt_resetPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_resetPassword.Name = "txt_resetPassword";
-            this.txt_resetPassword.Size = new System.Drawing.Size(224, 25);
+            this.txt_resetPassword.Size = new System.Drawing.Size(169, 21);
             this.txt_resetPassword.TabIndex = 8;
             this.txt_resetPassword.Text = "";
             // 
@@ -122,18 +127,21 @@
             this.btn_Back.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_Back.Location = new System.Drawing.Point(274, 246);
+            this.btn_Back.Location = new System.Drawing.Point(206, 200);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(257, 48);
+            this.btn_Back.Size = new System.Drawing.Size(193, 39);
             this.btn_Back.TabIndex = 7;
             this.btn_Back.Text = "Quay lại";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 72);
+            this.label1.Location = new System.Drawing.Point(132, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 24);
             this.label1.TabIndex = 6;
@@ -143,7 +151,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 22);
+            this.label3.Location = new System.Drawing.Point(132, 18);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 24);
             this.label3.TabIndex = 5;
@@ -153,9 +162,10 @@
             // 
             this.txt_Password.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Password.Location = new System.Drawing.Point(404, 71);
+            this.txt_Password.Location = new System.Drawing.Point(303, 58);
+            this.txt_Password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(224, 25);
+            this.txt_Password.Size = new System.Drawing.Size(169, 21);
             this.txt_Password.TabIndex = 3;
             this.txt_Password.Text = "";
             // 
@@ -163,9 +173,10 @@
             // 
             this.txt_Register.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Register.Location = new System.Drawing.Point(404, 24);
+            this.txt_Register.Location = new System.Drawing.Point(303, 20);
+            this.txt_Register.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_Register.Name = "txt_Register";
-            this.txt_Register.Size = new System.Drawing.Size(224, 25);
+            this.txt_Register.Size = new System.Drawing.Size(169, 21);
             this.txt_Register.TabIndex = 2;
             this.txt_Register.Text = "";
             // 
@@ -176,19 +187,21 @@
             this.btn_Register.BackColor = System.Drawing.SystemColors.Highlight;
             this.btn_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Register.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btn_Register.Location = new System.Drawing.Point(274, 180);
+            this.btn_Register.Location = new System.Drawing.Point(206, 146);
+            this.btn_Register.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Register.Name = "btn_Register";
-            this.btn_Register.Size = new System.Drawing.Size(257, 48);
+            this.btn_Register.Size = new System.Drawing.Size(193, 39);
             this.btn_Register.TabIndex = 2;
             this.btn_Register.Text = "Đăng ký";
             this.btn_Register.UseVisualStyleBackColor = false;
             // 
             // registerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.tab_Login);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "registerForm";
             this.Text = "resgisterForm";
             this.tab_Login.ResumeLayout(false);
