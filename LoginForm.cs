@@ -49,5 +49,13 @@ namespace GSS
             registerForm.ShowDialog();
             this.Show();
         }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            FormMain productForm = new FormMain();
+            this.Hide();
+            productForm.ShowDialog();
+            this.Show();
+        }
     }
 }
