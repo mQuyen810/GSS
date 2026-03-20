@@ -38,12 +38,14 @@
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnSupplier = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelBt.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.btnSupplier);
             this.panelMenu.Controls.Add(this.panelBt);
             this.panelMenu.Controls.Add(this.btnStatistic);
             this.panelMenu.Controls.Add(this.btnOrder);
@@ -166,6 +168,20 @@
             this.panelMain.Size = new System.Drawing.Size(1032, 551);
             this.panelMain.TabIndex = 1;
             // 
+            // btnSupplier
+            // 
+            this.btnSupplier.BackColor = System.Drawing.Color.Silver;
+            this.btnSupplier.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSupplier.ForeColor = System.Drawing.Color.Black;
+            this.btnSupplier.Location = new System.Drawing.Point(0, 240);
+            this.btnSupplier.Name = "btnSupplier";
+            this.btnSupplier.Size = new System.Drawing.Size(200, 40);
+            this.btnSupplier.TabIndex = 7;
+            this.btnSupplier.Text = "Quản lý nhà cung cấp";
+            this.btnSupplier.UseVisualStyleBackColor = false;
+            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,5 +210,6 @@
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Panel panelBt;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnSupplier;
     }
 }
