@@ -41,6 +41,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.cbSuppiler = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,9 +50,9 @@
             this.labelCategory = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelID = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.numQuantity = new System.Windows.Forms.NumericUpDown();
             this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lbTitle = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -61,18 +63,16 @@
             this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.suppiler = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel9 = new System.Windows.Forms.Panel();
             this.labelListProduct = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbSuppiler = new System.Windows.Forms.ComboBox();
-            this.suppiler = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panelProduct.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -89,8 +89,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataProduct)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelProduct
@@ -255,6 +255,26 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1029, 143);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
+            // cbSuppiler
+            // 
+            this.cbSuppiler.FormattingEnabled = true;
+            this.cbSuppiler.Location = new System.Drawing.Point(517, 118);
+            this.cbSuppiler.Name = "cbSuppiler";
+            this.cbSuppiler.Size = new System.Drawing.Size(191, 21);
+            this.cbSuppiler.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(415, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 28);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Nhà cung cấp:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(517, 72);
@@ -330,13 +350,6 @@
             this.labelID.Text = "Mã SP:";
             this.labelID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(517, 3);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(191, 20);
-            this.txtID.TabIndex = 9;
-            // 
             // numQuantity
             // 
             this.numQuantity.Location = new System.Drawing.Point(517, 95);
@@ -351,6 +364,13 @@
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(191, 21);
             this.cbCategory.TabIndex = 14;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(517, 3);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(191, 20);
+            this.txtID.TabIndex = 9;
             // 
             // panelTitle
             // 
@@ -437,6 +457,11 @@
             this.quantity.HeaderText = "Số lượng";
             this.quantity.Name = "quantity";
             // 
+            // suppiler
+            // 
+            this.suppiler.HeaderText = "Nhà cung cấp";
+            this.suppiler.Name = "suppiler";
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -469,6 +494,16 @@
             this.panel3.Size = new System.Drawing.Size(1229, 77);
             this.panel3.TabIndex = 2;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel10.Controls.Add(this.tableLayoutPanel2);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1229, 77);
+            this.panel10.TabIndex = 0;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -490,33 +525,19 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(827, 56);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // btnAdd
+            // button3
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(2, 2);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(202, 52);
-            this.btnAdd.TabIndex = 0;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(208, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 52);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Sửa";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(620, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(205, 52);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Lưu";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -532,54 +553,33 @@
             this.button2.Text = "Xóa";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button1
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(620, 2);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 52);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Lưu";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(208, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 52);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Sửa";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // panel10
+            // btnAdd
             // 
-            this.panel10.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel10.Controls.Add(this.tableLayoutPanel2);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1229, 77);
-            this.panel10.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(415, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 28);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Nhà cung cấp:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cbSuppiler
-            // 
-            this.cbSuppiler.FormattingEnabled = true;
-            this.cbSuppiler.Location = new System.Drawing.Point(517, 118);
-            this.cbSuppiler.Name = "cbSuppiler";
-            this.cbSuppiler.Size = new System.Drawing.Size(191, 21);
-            this.cbSuppiler.TabIndex = 16;
-            // 
-            // suppiler
-            // 
-            this.suppiler.HeaderText = "Nhà cung cấp";
-            this.suppiler.Name = "suppiler";
+            this.btnAdd.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(202, 52);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // ProductForm
             // 
@@ -614,8 +614,8 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
