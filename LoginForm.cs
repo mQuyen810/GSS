@@ -44,9 +44,17 @@ namespace GSS
 
         private void link_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            registerForm registerForm = new registerForm();
+            //registerForm registerForm = new registerForm();
             this.Hide();
-            registerForm.ShowDialog();
+            //registerForm.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            FormMain productForm = new FormMain();
+            this.Hide();
+            productForm.ShowDialog();
             this.Show();
         }
     }
