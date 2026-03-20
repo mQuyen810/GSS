@@ -90,7 +90,7 @@
             this.panel_dNhap.Controls.Add(this.txt_Login);
             this.panel_dNhap.Controls.Add(this.btn_Login);
             this.panel_dNhap.Location = new System.Drawing.Point(2, 106);
-            this.panel_dNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_dNhap.Margin = new System.Windows.Forms.Padding(2);
             this.panel_dNhap.Name = "panel_dNhap";
             this.panel_dNhap.Size = new System.Drawing.Size(593, 258);
             this.panel_dNhap.TabIndex = 2;
@@ -139,7 +139,7 @@
             this.txt_Password.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Password.Location = new System.Drawing.Point(303, 98);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(167, 21);
             this.txt_Password.TabIndex = 3;
@@ -150,7 +150,7 @@
             this.txt_Login.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Login.Location = new System.Drawing.Point(303, 53);
-            this.txt_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Login.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Login.Name = "txt_Login";
             this.txt_Login.Size = new System.Drawing.Size(167, 21);
             this.txt_Login.TabIndex = 2;
@@ -164,12 +164,13 @@
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btn_Login.Location = new System.Drawing.Point(206, 146);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(191, 39);
             this.btn_Login.TabIndex = 2;
             this.btn_Login.Text = "Đăng nhập";
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // LoginForm
             // 
@@ -179,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(597, 366);
             this.Controls.Add(this.tab_Login);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginForm";
             this.Text = "Đăng nhập";
             this.tab_Login.ResumeLayout(false);
