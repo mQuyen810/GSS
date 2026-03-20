@@ -16,5 +16,20 @@ namespace GSS
         {
             InitializeComponent();
         }
+
+        private void tab_Login_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lb_Register_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
