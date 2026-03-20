@@ -44,9 +44,9 @@ namespace GSS
 
         private void link_Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            registerForm registerForm = new registerForm();
+            //registerForm registerForm = new registerForm();
             this.Hide();
-            registerForm.ShowDialog();
+            //registerForm.ShowDialog();
             this.Show();
         }
 

@@ -56,6 +56,7 @@ namespace GSS
         private void btnCategory_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            LoadForm(new CategoryForm());
         }
     }
 }
