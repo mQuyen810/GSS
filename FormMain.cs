@@ -89,10 +89,15 @@ namespace GSS
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            LoginForm LoginForm = new LoginForm();
             this.Hide();
-            LoginForm.ShowDialog();
-            this.Show();
+
+            using (LoginForm login = new LoginForm())
+            {
+                login.ShowDialog();
+            }
+
+            this.Close();
+
 
         }
     }
