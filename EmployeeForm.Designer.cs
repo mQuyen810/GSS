@@ -41,6 +41,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataProduct = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameSupplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel9 = new System.Windows.Forms.Panel();
             this.labelListProduct = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -67,10 +71,6 @@
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameSupplier = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelProduct.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -212,7 +212,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 358);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1128, 92);
+            this.panel4.Size = new System.Drawing.Size(1128, 213);
             this.panel4.TabIndex = 13;
             // 
             // panel5
@@ -221,7 +221,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 43);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1128, 49);
+            this.panel5.Size = new System.Drawing.Size(1128, 170);
             this.panel5.TabIndex = 3;
             // 
             // dataProduct
@@ -236,8 +236,28 @@
             this.dataProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataProduct.Location = new System.Drawing.Point(0, 0);
             this.dataProduct.Name = "dataProduct";
-            this.dataProduct.Size = new System.Drawing.Size(1128, 49);
+            this.dataProduct.Size = new System.Drawing.Size(1128, 170);
             this.dataProduct.TabIndex = 1;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "Mã NV";
+            this.ID.Name = "ID";
+            // 
+            // nameSupplier
+            // 
+            this.nameSupplier.HeaderText = "Tên nhân viên";
+            this.nameSupplier.Name = "nameSupplier";
+            // 
+            // phone
+            // 
+            this.phone.HeaderText = "Số điện thoại";
+            this.phone.Name = "phone";
+            // 
+            // address
+            // 
+            this.address.HeaderText = "Địa chỉ";
+            this.address.Name = "address";
             // 
             // panel9
             // 
@@ -534,31 +554,11 @@
             this.lbTitle.Text = "Thông tin nhân viên";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "Mã NV";
-            this.ID.Name = "ID";
-            // 
-            // nameSupplier
-            // 
-            this.nameSupplier.HeaderText = "Tên nhân viên";
-            this.nameSupplier.Name = "nameSupplier";
-            // 
-            // phone
-            // 
-            this.phone.HeaderText = "Số điện thoại";
-            this.phone.Name = "phone";
-            // 
-            // address
-            // 
-            this.address.HeaderText = "Địa chỉ";
-            this.address.Name = "address";
-            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1128, 450);
+            this.ClientSize = new System.Drawing.Size(1128, 571);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

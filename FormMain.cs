@@ -81,5 +81,19 @@ namespace GSS
         {
 
         }
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            LoadForm(new OrderForm());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm LoginForm = new LoginForm();
+            this.Hide();
+            LoginForm.ShowDialog();
+            this.Show();
+
+        }
     }
 }
