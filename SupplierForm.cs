@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace GSS
 {
-    public partial class ProductForm : Form
+    public partial class SupplierForm : Form
     {
-        public ProductForm()
+        public SupplierForm()
         {
             InitializeComponent();
         }
 
-        private void lbProduct_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
+        private void txtID_TextChanged(object sender, EventArgs e)
         {
 
         }

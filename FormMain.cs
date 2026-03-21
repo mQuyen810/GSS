@@ -58,5 +58,28 @@ namespace GSS
             ActivateButton(sender);
             LoadForm(new CategoryForm());
         }
+
+        private void btnSupplier_Click(object sender, EventArgs e)
+        {   
+            ActivateButton(sender);
+            LoadForm(new SupplierForm());
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            LoadForm(new CustomerForm());
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            LoadForm(new EmployeeForm());
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
