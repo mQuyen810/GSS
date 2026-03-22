@@ -13,7 +13,7 @@ namespace GSS
 {
     public partial class ProductForm : Form
     {
-        string connStr = "Server=DESKTOP-HQHA2ES\\SQLEXPRESS;Database=SportStoreDB;Trusted_Connection=True;";
+        string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
         public ProductForm()
         {
             InitializeComponent();
