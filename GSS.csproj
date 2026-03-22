@@ -70,6 +70,12 @@
     <Compile Include="CategoryForm.Designer.cs">
       <DependentUpon>CategoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStatistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistical.Designer.cs">
+      <DependentUpon>FormStatistical.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatistical.resx">
+      <DependentUpon>FormStatistical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
