@@ -13,6 +13,7 @@ namespace GSS
 {
     public partial class SupplierForm : Form
     {
+        //string connStr = "Server=DESKTOP-HQHA2ES\\SQLEXPRESS;Database=SportStoreDB;Trusted_Connection=True;";
         string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
         public SupplierForm()
         {
@@ -54,11 +55,7 @@ namespace GSS
                 MessageBox.Show("Thêm nhà cung cấp thành công!");
 
                 LoadData();
-
-                txtID.Clear();
-                txtName.Clear();
-                txtPhone.Clear();
-                txtAddress.Clear();
+                ClearInputs();
             }
         }
 
@@ -68,7 +65,6 @@ namespace GSS
             {
                 conn.Open();
 
-                // Return original column names so code can reference columns by those names
                 string query = "SELECT SupplierID, SupplierName, Phone, Address FROM Suppliers";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
 
@@ -92,7 +88,6 @@ namespace GSS
                 dataSupplier.MultiSelect = false;
                 dataSupplier.ReadOnly = true;
 
-                // Clear selection so text boxes are not filled with stale data
                 dataSupplier.ClearSelection();
             }
         }
@@ -116,7 +111,6 @@ namespace GSS
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            // Prefer selected row
             int id;
             if (dataSupplier.SelectedRows != null && dataSupplier.SelectedRows.Count > 0)
             {
@@ -161,11 +155,7 @@ namespace GSS
                         MessageBox.Show("Không tìm thấy nhà cung cấp hoặc đã bị xóa.");
 
                     LoadData();
-
-                    txtID.Clear();
-                    txtName.Clear();
-                    txtPhone.Clear();
-                    txtAddress.Clear();
+                    ClearInputs();
                 }
             }
             catch (Exception ex)
@@ -218,11 +208,29 @@ namespace GSS
                         MessageBox.Show("Cập nhật thất bại: không tìm thấy nhà cung cấp.");
 
                     LoadData();
+                    ClearInputs();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi cập nhật: " + ex.Message);
+            }
+        }
+        private void ClearInputs()
+        {
+            txtID.Clear();
+            txtName.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
+
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+            if(txtPhone.Text.Length > 10)
+            {
+                MessageBox.Show("Số điện thoại không được vượt quá 10 ký tự!");
+                txtPhone.Text = txtPhone.Text.Substring(0, 10);
             }
         }
     }
