@@ -693,5 +693,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameSupplier;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn address;
     }
 }

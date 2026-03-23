@@ -57,7 +57,7 @@
             this.panelMenu.Controls.Add(this.panelBt);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(267, 678);
             this.panelMenu.TabIndex = 0;
@@ -69,7 +69,7 @@
             this.btnSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupplier.ForeColor = System.Drawing.Color.Black;
             this.btnSupplier.Location = new System.Drawing.Point(0, 343);
-            this.btnSupplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupplier.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.Size = new System.Drawing.Size(267, 49);
             this.btnSupplier.TabIndex = 15;
@@ -84,7 +84,7 @@
             this.btnStatistic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatistic.ForeColor = System.Drawing.Color.Black;
             this.btnStatistic.Location = new System.Drawing.Point(0, 294);
-            this.btnStatistic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStatistic.Margin = new System.Windows.Forms.Padding(4);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Size = new System.Drawing.Size(267, 49);
             this.btnStatistic.TabIndex = 14;
@@ -99,7 +99,7 @@
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.ForeColor = System.Drawing.Color.Black;
             this.btnOrder.Location = new System.Drawing.Point(0, 245);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(267, 49);
             this.btnOrder.TabIndex = 13;
@@ -114,7 +114,7 @@
             this.btnEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnEmployee.Location = new System.Drawing.Point(0, 196);
-            this.btnEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(267, 49);
             this.btnEmployee.TabIndex = 12;
@@ -129,7 +129,7 @@
             this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnCustomer.Location = new System.Drawing.Point(0, 147);
-            this.btnCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(267, 49);
             this.btnCustomer.TabIndex = 11;
@@ -144,7 +144,7 @@
             this.btnCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategory.ForeColor = System.Drawing.Color.Black;
             this.btnCategory.Location = new System.Drawing.Point(0, 98);
-            this.btnCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(4);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(267, 49);
             this.btnCategory.TabIndex = 10;
@@ -159,7 +159,7 @@
             this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.Black;
             this.btnProduct.Location = new System.Drawing.Point(0, 49);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(267, 49);
             this.btnProduct.TabIndex = 9;
@@ -174,7 +174,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.Black;
             this.btnDashboard.Location = new System.Drawing.Point(0, 0);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(267, 49);
             this.btnDashboard.TabIndex = 8;
@@ -187,7 +187,7 @@
             this.panelBt.Controls.Add(this.btnLogout);
             this.panelBt.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelBt.Location = new System.Drawing.Point(0, 618);
-            this.panelBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBt.Margin = new System.Windows.Forms.Padding(4);
             this.panelBt.Name = "panelBt";
             this.panelBt.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.panelBt.Size = new System.Drawing.Size(267, 60);
@@ -198,7 +198,7 @@
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Location = new System.Drawing.Point(13, 12);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(241, 36);
             this.btnLogout.TabIndex = 0;
@@ -210,10 +210,11 @@
             // 
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(267, 0);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1376, 678);
             this.panelMain.TabIndex = 1;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // FormMain
             // 
@@ -222,7 +223,7 @@
             this.ClientSize = new System.Drawing.Size(1643, 678);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Text = "Quản lý bán đồ thể thao";
             this.Load += new System.EventHandler(this.FormMain_Load);

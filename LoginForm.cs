@@ -54,7 +54,7 @@ namespace GSS
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            string connStr = "Server=DESKTOP-HQHA2ES\\SQLEXPRESS;Database=SportStoreDB;Trusted_Connection=True;";
+            string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {   
