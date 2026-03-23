@@ -13,6 +13,7 @@ namespace GSS
 {
     public partial class ProductForm : Form
     {
+        //string connStr = "Server=DESKTOP-HQHA2ES\\SQLEXPRESS;Database=SportStoreDB;Trusted_Connection=True;";
         string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
         public ProductForm()
         {
@@ -247,16 +248,16 @@ namespace GSS
 
                 if (dataProduct.Columns.Contains("ID"))
                     dataProduct.Columns["ID"].HeaderText = "Mã SP";
-                if (dataProduct.Columns.Contains("nameProduct"))
-                    dataProduct.Columns["nameProduct"].HeaderText = "Tên sản phẩm";
-                if (dataProduct.Columns.Contains("category"))
-                    dataProduct.Columns["category"].HeaderText = "CategoryName";
-                if (dataProduct.Columns.Contains("price"))
-                    dataProduct.Columns["price"].HeaderText = "Giá";
-                if (dataProduct.Columns.Contains("quantity"))
-                    dataProduct.Columns["quantity"].HeaderText = "Số lượng";
-                if (dataProduct.Columns.Contains("supplier"))
-                    dataProduct.Columns["supplier"].HeaderText = "Nhà cung cấp";
+                if (dataProduct.Columns.Contains("ProductName"))
+                    dataProduct.Columns["ProductName"].HeaderText = "Tên sản phẩm";
+                if (dataProduct.Columns.Contains("CategoryName"))
+                    dataProduct.Columns["CategoryName"].HeaderText = "Loại sản phẩm";
+                if (dataProduct.Columns.Contains("Price"))
+                    dataProduct.Columns["Price"].HeaderText = "Giá";
+                if (dataProduct.Columns.Contains("Quantity"))
+                    dataProduct.Columns["Quantity"].HeaderText = "Số lượng";
+                if (dataProduct.Columns.Contains("SupplierName"))
+                    dataProduct.Columns["SupplierName"].HeaderText = "Nhà cung cấp";
 
                 dataProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dataProduct.MultiSelect = false;
