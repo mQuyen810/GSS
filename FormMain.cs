@@ -100,5 +100,10 @@ namespace GSS
 
 
         }
+        private void btnStatistical_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            LoadForm(new FormStatistical());
+        }
     }
 }
