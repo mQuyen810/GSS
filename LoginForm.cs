@@ -13,7 +13,7 @@ namespace GSS
 {
     public partial class LoginForm : Form
     {
-        string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
+        string connStr = "Server=THANG\\MANHTHANG;Database=SportStoreDB;Trusted_Connection=True;";
         public LoginForm()
         {
             InitializeComponent();
@@ -54,7 +54,7 @@ namespace GSS
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
+            string connStr = "Server=THANG\\MANHTHANG;Database=SportStoreDB;Trusted_Connection=True;";
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {   

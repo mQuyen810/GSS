@@ -13,7 +13,7 @@ namespace GSS
 {
     public partial class CategoryForm : Form
     {
-        string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
+        string connStr = "Server=THANG\\MANHTHANG;Database=SportStoreDB;Trusted_Connection=True;";
         public CategoryForm()
         {
             InitializeComponent();
