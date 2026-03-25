@@ -13,42 +13,80 @@ namespace GSS
 {
     public partial class EmployeeForm : Form
     {
-        string connStr = "Server=THANG\\MANHTHANG;Database=SportStoreDB;Trusted_Connection=True;";
+        //string connStr = "Server=THANG\\MANHTHANG;Database=SportStoreDB;Trusted_Connection=True;";
+        string connStr = "Server=localhost;Database=SportStoreDB;Trusted_Connection=True;";
 
         public EmployeeForm()
         {
             InitializeComponent();
         }
 
-        // 📥 Load form
         private void EmployeeForm_Load(object sender, EventArgs e)
         {
             LoadData();
-            txtID.Enabled = false; // không cho nhập ID
+            txtID.Enabled = false;
+            // wire search events
+            btnSearch.Click += BtnSearch_Click;
+            textBox1.KeyDown += TextBox1_KeyDown;
         }
 
-        // 📊 Load dữ liệu
-        void LoadData()
+        void BtnSearch_Click(object sender, EventArgs e)
+        {
+            LoadData(textBox1.Text);
+        }
+
+        private void TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+                LoadData(textBox1.Text);
+            }
+        }
+
+        void LoadData(string nameFilter = null)
         {
             using (SqlConnection conn = new SqlConnection(connStr))
             {
                 string query = "SELECT * FROM Employees";
+                if (!string.IsNullOrWhiteSpace(nameFilter))
+                {
+                    query += " WHERE EmployeeName LIKE @Name";
+                }
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                if (!string.IsNullOrWhiteSpace(nameFilter))
+                {
+                    da.SelectCommand.Parameters.AddWithValue("@Name", "%" + nameFilter.Trim() + "%");
+                }
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
+                dataProduct.Columns.Clear();
                 dataProduct.AutoGenerateColumns = true;
-                dataProduct.DataSource = null;
                 dataProduct.DataSource = dt;
+                dataProduct.Columns["EmployeeID"].HeaderText = "Mã nhân viên";
+                dataProduct.Columns["EmployeeName"].HeaderText = "Tên nhân viên";
+                dataProduct.Columns["Phone"].HeaderText = "Số điện thoại";
+                dataProduct.Columns["Address"].HeaderText = "Địa chỉ";
             }
         }
 
-        // ➕ THÊM
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (txtName.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tên nhân viên!");
+                return;
+            }
+            if (txtPhone.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại!");
+                return;
+            }
+            if (txtAddress.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ!");
                 return;
             }
 
@@ -65,13 +103,12 @@ namespace GSS
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-                MessageBox.Show("Thêm thành công 🎉");
+                MessageBox.Show("Thêm thành công!");
                 LoadData();
                 ClearData();
             }
         }
 
-        // ✏️ SỬA
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtID.Text == "")
@@ -94,13 +131,12 @@ namespace GSS
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-                MessageBox.Show("Cập nhật thành công ✏️");
+                MessageBox.Show("Cập nhật thành công!");
                 LoadData();
                 ClearData();
             }
         }
 
-        // ❌ XÓA
         private void button2_Click(object sender, EventArgs e)
         {
             if (txtID.Text == "")
@@ -110,7 +146,7 @@ namespace GSS
             }
 
             DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa?",
-                                                 "Xác nhận",
+                                                 "Xác nhận!",
                                                  MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
@@ -126,14 +162,13 @@ namespace GSS
                     cmd.ExecuteNonQuery();
                     conn.Close();
 
-                    MessageBox.Show("Xóa thành công 💥");
+                    MessageBox.Show("Xóa thành công!");
                     LoadData();
                     ClearData();
                 }
             }
         }
 
-        // 🖱️ Click DataGridView
         private void dataEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -147,7 +182,6 @@ namespace GSS
             }
         }
 
-        // 🧹 Clear dữ liệu
         void ClearData()
         {
             txtID.Text = "";
